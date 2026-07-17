@@ -92,17 +92,30 @@
 
 // Challenge 6
 // একটি Array-এর Sum Return করো।
-    function arrAdd(numbers=[]){
-        let sum = 0;
-        for(number of numbers){
-          sum += number
-        }
-        return sum
-    }
-    const sum = arrAdd([20, 30, 40, 10])
-    console.log(sum)
+    // function arrAdd(numbers=[]){
+    //     let sum = 0;
+    //     for(let number of numbers){
+    //       sum += number
+    //     }
+    //     return sum
+    // }
+    // const sum = arrAdd([20, 30, 40, 10])
+    // console.log(sum)
+
 // Challenge 7
 // একটি Array-এর Average Return করো।
+function getAverage(numbers=[]){
+let arrAverage = 0;
+let sumOfArr = 0
+for(let number of numbers){
+    sumOfArr += number;
+    
+}
+arrAverage = sumOfArr / numbers.length;
+return arrAverage
+}
+const average = getAverage([20, 50, 60])
+console.log(average) 
 
 // Challenge 8
 // একটি String-এর Length Return করো।
