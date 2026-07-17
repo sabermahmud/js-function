@@ -43,24 +43,53 @@
 
 // Challenge 3
 // একটি সংখ্যা Even নাকি Odd Return করো।
-    function check (number){
+    // function check (number){
 
-        // if (number % 2 === 0){
-        //     return "even"
-        // }
-        // else{
-        //     return "odd"
-        // }
-        return number % 2 === 0 ? "even":"odd"
-    }
-    const result = check(53);
-    console.log(result)
+    //     // if (number % 2 === 0){
+    //     //     return "even"
+    //     // }
+    //     // else{
+    //     //     return "odd"
+    //     // }
+
+    //     // return number % 2 === 0 ? "even":"odd"
+    // }
+    // const result = check(53);
+    // console.log(result)
+
 // Challenge 4
 // দুইটি সংখ্যার মধ্যে বড়টি Return করো।
-
+    // function findMax (num1 , num2){
+    //     return num1 > num2 ? num1 : num2
+    // }
+    // const result = findMax(25, 25);
+    // console.log(result)
+// ******************************************
+//     🎯 Interview Rule                    *  
+// "Convert this if...else into ternary."   *
+// অথবা                                     *
+// "Convert this ternary into if...else."   *
+// কারণ Interview-তে এটা খুবই Common।         *
+// ******************************************
 // Challenge 5
 // তিনটি সংখ্যার মধ্যে বড়টি Return করো।
+function findMax (num1, num2, num3){
+    if(num1 === num2 && num1 === num3 && num2 === num3){
+        return "all are similar"
+    }
+    else if(num1 >= num2 && num1 >= num3){
+        return "biggest:"+num1
+    }
+    else if(num2 >= num1 && num2 >= num3){
+        return "biggest:"+num2
+    }
+    else if(num3 >= num1 && num3 >= num2){
+        return "biggest:"+ num3
+    }
 
+}
+const result = findMax(90, 10, 70)
+console.log(result)
 // Challenge 6
 // একটি Array-এর Sum Return করো।
 
