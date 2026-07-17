@@ -73,26 +73,34 @@
 // ******************************************
 // Challenge 5
 // তিনটি সংখ্যার মধ্যে বড়টি Return করো।
-function findMax (num1, num2, num3){
-    if(num1 === num2 && num1 === num3 && num2 === num3){
-        return "all are similar"
-    }
-    else if(num1 >= num2 && num1 >= num3){
-        return "biggest:"+num1
-    }
-    else if(num2 >= num1 && num2 >= num3){
-        return "biggest:"+num2
-    }
-    else if(num3 >= num1 && num3 >= num2){
-        return "biggest:"+ num3
-    }
+// function findMax (num1, num2, num3){
+//     if(num1 === num2 && num1 === num3 && num2 === num3){
+//         return "all are similar"
+//     }
+//     else if(num1 >= num2 && num1 >= num3){
+//         return "biggest:"+num1
+//     }
+//     else if(num2 >= num1 && num2 >= num3){
+//         return "biggest:"+num2
+//     }
+//     else if(num3 >= num1 && num3 >= num2){
+//         return "biggest:"+ num3
+//     }
+// }
+// const result = findMax(90, 10, 70)
+// console.log(result)
 
-}
-const result = findMax(90, 10, 70)
-console.log(result)
 // Challenge 6
 // একটি Array-এর Sum Return করো।
-
+    function arrAdd(numbers=[]){
+        let sum = 0;
+        for(number of numbers){
+          sum += number
+        }
+        return sum
+    }
+    const sum = arrAdd([20, 30, 40, 10])
+    console.log(sum)
 // Challenge 7
 // একটি Array-এর Average Return করো।
 
