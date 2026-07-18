@@ -119,13 +119,23 @@
 
 // Challenge 8
 // একটি String-এর Length Return করো।
-function printStringLength (name){
-    return name.length
-}
-const myName = printStringLength("Saber")
-console.log(myName)
+// function printStringLength (name){
+//     return name.length
+// }
+// const myName = printStringLength("Saber")
+// console.log(myName)
+
 // Challenge 9
 // একটি সংখ্যার Square Return করো।
-
+// function getSquare (num){
+//     return num * num
+// } 
+// const squaredNumber = getSquare(4);
+// console.log(squaredNumber);
 // Challenge 10
 // একটি সংখ্যার Cube Return করো।
+function getCube (num){
+    return num * num * num
+}
+const cubedNumber = getCube(5);
+console.log(cubedNumber)
