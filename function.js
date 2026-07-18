@@ -143,24 +143,31 @@
 
 // Challenge 11
 // একটি Array-এর সবচেয়ে ছোট সংখ্যা return করো।
-function getMin(nums = []) {
-    let smallestNum = nums[0];
-
-    for (num of nums) {
-        if (num < smallestNum) {
-            smallestNum = num;
-        }
-    }
-
-    return smallestNum;
-}
-
-const result = getMin([2, 24, 32, 69]);
-console.log(result);
+// function getMin(nums = []) {
+//     let smallestNum = nums[0];
+//     for (num of nums) {
+//         if (num < smallestNum) {
+//             smallestNum = num;
+//         }
+//     }
+//     return smallestNum;
+// }
+// const result = getMin([2, 24, 32, 69]);
+// console.log(result);
 
 // Challenge 12
 // একটি Array-এর Even সংখ্যাগুলোর Sum return করো।
-
+function getSumOfEvens(nums) {
+    let evensSum = 0;
+    for (let num of nums) {
+        if (num % 2 === 0) {
+            evensSum += num
+        }
+    }
+    return evensSum
+}
+const sumOfEvens = getSumOfEvens([25, 36, 96, 47, 62, 35, 97, 86, 32]);
+console.log(sumOfEvens)
 // Challenge 13
 // একটি Array-এর Odd সংখ্যাগুলোর Sum return করো।
 
