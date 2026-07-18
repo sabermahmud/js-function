@@ -43,27 +43,27 @@
 
 // Challenge 3
 // একটি সংখ্যা Even নাকি Odd Return করো।
-    // function check (number){
+// function check (number){
 
-    //     // if (number % 2 === 0){
-    //     //     return "even"
-    //     // }
-    //     // else{
-    //     //     return "odd"
-    //     // }
+//     // if (number % 2 === 0){
+//     //     return "even"
+//     // }
+//     // else{
+//     //     return "odd"
+//     // }
 
-    //     // return number % 2 === 0 ? "even":"odd"
-    // }
-    // const result = check(53);
-    // console.log(result)
+//     // return number % 2 === 0 ? "even":"odd"
+// }
+// const result = check(53);
+// console.log(result)
 
 // Challenge 4
 // দুইটি সংখ্যার মধ্যে বড়টি Return করো।
-    // function findMax (num1 , num2){
-    //     return num1 > num2 ? num1 : num2
-    // }
-    // const result = findMax(25, 25);
-    // console.log(result)
+// function findMax (num1 , num2){
+//     return num1 > num2 ? num1 : num2
+// }
+// const result = findMax(25, 25);
+// console.log(result)
 // ******************************************
 //     🎯 Interview Rule                    *  
 // "Convert this if...else into ternary."   *
@@ -92,15 +92,15 @@
 
 // Challenge 6
 // একটি Array-এর Sum Return করো।
-    // function arrAdd(numbers=[]){
-    //     let sum = 0;
-    //     for(let number of numbers){
-    //       sum += number
-    //     }
-    //     return sum
-    // }
-    // const sum = arrAdd([20, 30, 40, 10])
-    // console.log(sum)
+// function arrAdd(numbers=[]){
+//     let sum = 0;
+//     for(let number of numbers){
+//       sum += number
+//     }
+//     return sum
+// }
+// const sum = arrAdd([20, 30, 40, 10])
+// console.log(sum)
 
 // Challenge 7
 // একটি Array-এর Average Return করো।
@@ -109,7 +109,7 @@
 // let sumOfArr = 0
 // for(let number of numbers){
 //     sumOfArr += number;
-    
+
 // }
 // const arrAverage = sumOfArr / numbers.length;
 // return arrAverage
@@ -132,10 +132,58 @@
 // } 
 // const squaredNumber = getSquare(4);
 // console.log(squaredNumber);
+
 // Challenge 10
 // একটি সংখ্যার Cube Return করো।
-function getCube (num){
-    return num * num * num
+// function getCube (num){
+//     return num * num * num
+// }
+// const cubedNumber = getCube(5);
+// console.log(cubedNumber)
+
+// Challenge 11
+// একটি Array-এর সবচেয়ে ছোট সংখ্যা return করো।
+function getMin(nums = []) {
+    let smallestNum = nums[0];
+
+    for (num of nums) {
+        if (num < smallestNum) {
+            smallestNum = num;
+        }
+    }
+
+    return smallestNum;
 }
-const cubedNumber = getCube(5);
-console.log(cubedNumber)
+
+const result = getMin([2, 24, 32, 69]);
+console.log(result);
+
+// Challenge 12
+// একটি Array-এর Even সংখ্যাগুলোর Sum return করো।
+
+// Challenge 13
+// একটি Array-এর Odd সংখ্যাগুলোর Sum return করো।
+
+// Challenge 14
+// একটি String-এর প্রতিটি Character একে একে console.log() করো।
+
+// Challenge 15
+// একটি Array-এর মধ্যে একটি নির্দিষ্ট Number আছে কিনা, true বা false return করো।
+
+// Challenge 16
+// একটি Array-তে কয়টি Even Number আছে, তা return করো।
+
+
+// Challenge 17
+// একটি Array-তে কয়টি Odd Number আছে, তা return করো।
+
+// Challenge 18
+// একটি String-এর মধ্যে কয়টি Character আছে (Space বাদ দিয়ে), তা return করো।
+
+
+// Challenge 19
+// একটি Array-এর সবচেয়ে বড় এবং সবচেয়ে ছোট সংখ্যার Difference return করো।
+
+
+// ⭐ Challenge 20 (Interview Level)
+// একটি Array-এর দ্বিতীয় সবচেয়ে বড় (Second Largest) সংখ্যাটি return করো।
