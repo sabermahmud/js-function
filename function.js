@@ -157,20 +157,31 @@
 
 // Challenge 12
 // একটি Array-এর Even সংখ্যাগুলোর Sum return করো।
-function getSumOfEvens(nums) {
-    let evensSum = 0;
-    for (let num of nums) {
-        if (num % 2 === 0) {
-            evensSum += num
-        }
-    }
-    return evensSum
-}
-const sumOfEvens = getSumOfEvens([25, 36, 96, 47, 62, 35, 97, 86, 32]);
-console.log(sumOfEvens)
+// function getSumOfEvens(nums) {
+//     let evensSum = 0;
+//     for (let num of nums) {
+//         if (num % 2 === 0) {
+//             evensSum += num
+//         }
+//     }
+//     return evensSum
+// }
+// const sumOfEvens = getSumOfEvens([25, 36, 96, 47, 62, 35, 97, 86, 32]);
+// console.log(sumOfEvens)
+
 // Challenge 13
 // একটি Array-এর Odd সংখ্যাগুলোর Sum return করো।
-
+function getSumOfOdds (nums){
+    let oddsSum = 0;
+    for(let num of nums){
+        if(num % 2 !== 0){
+            oddsSum += num;
+        }
+    }
+    return oddsSum
+}
+const sumOfOdds = getSumOfOdds([24, 35, 69, 87, 36, 24, 37, 68]);
+console.log(sumOfOdds)
 // Challenge 14
 // একটি String-এর প্রতিটি Character একে একে console.log() করো।
 
