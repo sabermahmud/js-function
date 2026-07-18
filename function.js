@@ -194,34 +194,47 @@
 
 // Challenge 15
 // একটি Array-এর মধ্যে একটি নির্দিষ্ট Number আছে কিনা, true বা false return করো।
-// function arr (nums){
-//     if(nums.includes(36)){
-//         return true
-//     }
-//     else{
-//         return false
-//     }
-// }
-// const numsArr = arr([12, 30, 32, 58, 98, 65, 78, 90]);
-// console.log(numsArr)
+function getWantedNum (nums, wantedNum){
+    if(nums.includes(wantedNum)){
+        return true
+    }
+    else{
+        return false
+    }
+}
+nums = [12, 30, 32, 58, 98, 65, 78, 90]
+wantedNum = 56
+const checkedNum = getWantedNum (nums,wantedNum);
+console.log(checkedNum)
 
 // Challenge 16
 // একটি Array-তে কয়টি Even Number আছে, তা return করো।
 
-function countEven(nums) {
-    let count = 0;
-    for (let num of nums) {
-        if (num % 2 === 0) {
-            count ++
-        }
-    }
-    return count
-}
-const countedEvens = countEven([23, 43, 12, 45, 78, 88, 24, 56, 98])
-console.log(countedEvens);
+// function countEven(nums) {
+//     let count = 0;
+//     for (let num of nums) {
+//         if (num % 2 === 0) {
+//             count ++
+//         }
+//     }
+//     return count
+// }
+// const countedEvens = countEven([23, 43, 12, 45, 78, 88, 24, 56, 98])
+// console.log(countedEvens);
+
 // Challenge 17
 // একটি Array-তে কয়টি Odd Number আছে, তা return করো।
-
+// function countOdd(nums) {
+//     let count = 0;
+//     for (let num of nums) {
+//         if (num % 2 !== 0) {
+//             count++
+//         }
+//     }
+//     return count
+// }
+// const countedOdd = countOdd([23, 43, 12, 45, 78, 88, 24, 56, 97])
+// console.log(countedOdd)
 
 // Challenge 18
 // একটি String-এর মধ্যে কয়টি Character আছে (Space বাদ দিয়ে), তা return করো।
