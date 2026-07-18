@@ -104,22 +104,26 @@
 
 // Challenge 7
 // একটি Array-এর Average Return করো।
-function getAverage(numbers=[]){
-let arrAverage = 0;
-let sumOfArr = 0
-for(let number of numbers){
-    sumOfArr += number;
+// function getAverage(numbers=[]){
+
+// let sumOfArr = 0
+// for(let number of numbers){
+//     sumOfArr += number;
     
-}
-arrAverage = sumOfArr / numbers.length;
-return arrAverage
-}
-const average = getAverage([20, 50, 60])
-console.log(average) 
+// }
+// const arrAverage = sumOfArr / numbers.length;
+// return arrAverage
+// }
+// const average = getAverage([20, 50, 60])
+// console.log(average) 
 
 // Challenge 8
 // একটি String-এর Length Return করো।
-
+function printStringLength (name){
+    return name.length
+}
+const myName = printStringLength("Saber")
+console.log(myName)
 // Challenge 9
 // একটি সংখ্যার Square Return করো।
 
