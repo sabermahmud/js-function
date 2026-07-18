@@ -171,20 +171,26 @@
 
 // Challenge 13
 // একটি Array-এর Odd সংখ্যাগুলোর Sum return করো।
-function getSumOfOdds (nums){
-    let oddsSum = 0;
-    for(let num of nums){
-        if(num % 2 !== 0){
-            oddsSum += num;
-        }
-    }
-    return oddsSum
-}
-const sumOfOdds = getSumOfOdds([24, 35, 69, 87, 36, 24, 37, 68]);
-console.log(sumOfOdds)
+// function getSumOfOdds(nums) {
+//     let oddsSum = 0;
+//     for (let num of nums) {
+//         if (num % 2 !== 0) {
+//             oddsSum += num;
+//         }
+//     }
+//     return oddsSum
+// }
+// const sumOfOdds = getSumOfOdds([24, 35, 69, 87, 36, 24, 37, 68]);
+// console.log(sumOfOdds)
+
 // Challenge 14
 // একটি String-এর প্রতিটি Character একে একে console.log() করো।
-
+function printCharacters(greeting){
+    for (let char of greeting){
+        console.log(char)
+    }
+}
+printCharacters( "I Love JavaScript")
 // Challenge 15
 // একটি Array-এর মধ্যে একটি নির্দিষ্ট Number আছে কিনা, true বা false return করো।
 
